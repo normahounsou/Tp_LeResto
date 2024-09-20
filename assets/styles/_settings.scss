@@ -1,0 +1,63 @@
+//Police Allura
+@font-face {
+    font-family: "Allura";
+    src: url(/assets/fonts/Allura/Allura-Regular.ttf);
+}
+//Police Poppins
+@font-face {
+    font-family: "Poppins";
+    src: url(/assets/fonts/Poppins/Poppins-Medium.ttf);
+}
+//Police Roboto
+@font-face {
+    font-family: "Roboto";
+    src: url(/assets/fonts/Roboto/Roboto-Light.ttf);
+}
+
+$font1: Allura, sans-serif;
+$font2: Poppins, sans-serif;
+$font3: Roboto, serif;
+
+$white1: #eeeeee;
+$marron: #ad774d;
+$gray: #7e7f82;
+$black1: #1f1d1a;
+$black2: #000000;
+$black_body: #21201e;
+
+@mixin title {
+    font-family: $font2;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+span {
+    text-align: center;
+    font-family: $font1;
+}
+h1 {
+    @include title;
+    letter-spacing: 6px;
+    font-size: 5rem;
+    text-align: center;
+    color: $white1;
+}
+p {
+    font-family: $font3;
+}
+body {
+    background: $black_body;
+    color: $white1;
+    min-height: 100vh;
+}
