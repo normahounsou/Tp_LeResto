@@ -214,6 +214,9 @@ header div p {
   padding: 0;
   text-align: center;
   line-height: 20px;
+  font-family: Poppins, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 .section1 .right_store img {
   width: 100%;
